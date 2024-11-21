@@ -1,0 +1,35 @@
+PS C:\Users\aki03\OneDrive\デスクトップ> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\aki03\OneDrive\デスクトップ
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/11/22      0:24                git_challenge
+
+
+PS C:\Users\aki03\OneDrive\デスクトップ> cd git_challenge
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git init
+Initialized empty Git repository in C:/Users/aki03/OneDrive/デスクトップ/git_challenge/.git/
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) b252071] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)     
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git commit -m "日本語訳を追記"
+[main 07c7baf] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> git log --oneline
+07c7baf (HEAD -> main) 日本語訳を追記
+b252071 hello_world.txtを追加
+PS C:\Users\aki03\OneDrive\デスクトップ\git_challenge> 
